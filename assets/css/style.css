@@ -19,7 +19,7 @@ a:hover {
 }
 
 header {
-    background-color: #1d5b8a;
+    background-color: #1dca88;
     color: #fff;
     padding: 1rem 1.5rem;
     display: flex;
@@ -52,15 +52,24 @@ main {
 
 section {
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 1.5px;
     padding: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    
+}
+
+section {
+    background-color: #fff;
+    max-width: 1000px;
+    padding: 1.5rem;
+    margin: 2rem auto;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 section h2 {
     margin-bottom: 1rem;
-    color: #1d5b8a;
+    color:#1dca88;
 }
 
 main section:nth-of-type(2) {
@@ -85,7 +94,7 @@ main section:nth-of-type(2) article h3{
 main section:nth-of-type(2) article p {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #1d5b8a;
+    color:#1dca88;
 }
 
 table {
@@ -100,7 +109,7 @@ th, td {
 }
 
 thead {
-    background-color: #1d5b8a;
+    background-color:#1dca88;
     color: #fff;
 }
 
@@ -132,13 +141,14 @@ td button.hapus {
 }
 
 td button.detail{
-    background-color: #1d5b8a;
+    background-color:#1dca88;
     color: #fff;
 }
 
 
 form p {
     margin-bottom: 1rem;
+    
 }
 
 form label {
@@ -147,7 +157,7 @@ form label {
     font-weight: 600;
     color: #444;
 }
-
+            
 form input,
 form select {
     width: 100%;
@@ -159,17 +169,18 @@ form select {
 }
 
 form button[type="submit"] {
-    background-color: #1d5b8a;
+    background-color:#1dca88;
     color: #fff;
     border: none;
     padding: 0.6rem 1.5rem;
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 form button[type="submit"]:hover {
-    background-color: #164869;
+    background-color: #15d850;
 }
 
 form button[type="return"] {
@@ -183,9 +194,12 @@ form button[type="return"] {
 }
 
 form button[type="return"]:hover {
-    background-color: #164869;
+    background-color: #0fe2c6;
 }
 
+section h1{
+    color: #1dca88 ;
+}
 
 footer {
     text-align: center;
