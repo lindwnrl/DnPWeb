@@ -65,6 +65,7 @@ section {
     padding: 1.5rem;
     margin: 2rem auto;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
 }
 
 section h2 {
@@ -76,6 +77,11 @@ main section:nth-of-type(2) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    
+}
+
+main section:nth-of-type(2) h2 {
+    grid-column: 1 / -1;
 }
 
 main section:nth-of-type(2) article {
@@ -206,4 +212,72 @@ footer {
     padding: 1.25rem;
     color: #7a8794;
     font-size: 0.9rem;
+}
+
+.nav-toogle {
+    display: none;
+}
+
+.nav-toogle-label {
+    display: none;
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.nav-toogle:checked ~ nav {
+    display: block;
+}
+
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    main section:nth-of-type(2){
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        position: relative;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .nav-toogle-label {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+        order: 3;
+        margin: top 1rem;
+    }
+
+    .nav-toogle:checked ~ nav {
+        display: block;
+    }
+
+    header nav ul{
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    main section:nth-of-type(2){
+        grid-template-columns: 1fr;
+    }
+
+    form input,
+    form select {
+        max-width: 100%;
+    }
 }
