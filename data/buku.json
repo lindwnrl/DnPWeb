@@ -1,0 +1,9 @@
+[
+    {"judul" : "Janji", "pengarang" : "Tere Liye", "tahun" : "2023", "stok" : 5 },
+    {"judul" : "Tenggelamnya kapal van der wijk", "pengarang" : "Hamka", "tahun" : "1936", "stok" : 2},
+    {"judul" : "Negeri 5 Menara", "pengarang" : "Ahmad Fuadi", "tahun" : "2009", "stok" : 6 },
+    {"judul" : "Cantik Itu Luka", "pengarang" : "Eka Kurniawan", "tahun" : "2002", "stok" : 1 },
+    {"judul" : "Madilog", "pengarang" : "Tan Malaka", "tahun" : "1943", "stok" : 2 },
+    {"judul" : "Pulang", "pengarang" : "Tere Liye", "tahun" : "2015", "stok" : 6 },
+    {"judul" : "Count de Monte Cristo", "pengarang" : "Alexandre Dumas", "tahun" : "1846", "stok" : 2 }
+]

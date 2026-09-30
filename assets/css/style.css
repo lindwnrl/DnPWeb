@@ -42,7 +42,6 @@ header nav ul {
 header nav a {
     color: #fff;
     font-weight: 500;
-    
 }
 
 main {
@@ -76,7 +75,7 @@ section h2 {
 
 main section:nth-of-type(2) {
     display: grid;
-    grid-template-columns: repeat( 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     
 }
@@ -142,7 +141,7 @@ td button.edit {
     color: #fff;
 }
 
-td button.hapus {
+td button.btn-hapus {
     background-color: #d9534f;
     color: #fff;
 }
@@ -214,27 +213,54 @@ footer {
     color: #7a8794;
     font-size: 0.9rem;
 }
-
-.nav-toogle {
-    display: none;
+footer {
+    text-align: center;
+    padding: 1.25rem;
+    color: #7a8794;
+    font-size: 0.9rem;
 }
 
-.nav-toogle-label {
+.table-responsive{
+    overflow-x: auto;
+}
+
+.nav-toggle-label {
     display: none;
     font-size: 1.6rem;
     color: #fff;
+    background: none;
+    border: none;
     cursor: pointer;
 }
 
 
 
-.nav-toogle:checked ~ nav {
+.nav-toggle:checked ~ nav {
     display: block;
 }
 
 
 .table-responsive {
     overflow-x: auto;
+}
+
+.error {
+    display: block;
+    color: #d9534f;
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.search-box {
+    margin-bottom: 1rem;
+}
+
+.search-box input{
+    width: 100%;
+    max-width: 320px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #cdd4da;
+    border-radius: 4px;
 }
 
 @media (max-width: 768px) {
@@ -253,7 +279,7 @@ footer {
         gap: 0.75rem;
     }
     
-    .nav-toogle-label {
+    .nav-toggle-label {
         display: block;
     }
 
@@ -264,7 +290,7 @@ footer {
         margin: top 1rem;
     }
 
-    .nav-toogle:checked ~ nav {
+    header nav.nav-open{
         display: block;
     }
 
@@ -281,4 +307,5 @@ footer {
     form select {
         max-width: 100%;
     }
+
 }
