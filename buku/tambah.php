@@ -23,7 +23,7 @@ unset($_SESSION['flash']);
                 </p>
                 <p>
                     <label for="tahun">Tahun Terbit</label><br>
-                    <input type="number" id="tahun" name="tahun" min="1900" max="2026" required>
+                    <input type="number" id="tahun" name="tahun" min="1800" max="2026" required>
                 </p>
                 <p>
                     <label for="isbn">ISBN</label><br>
