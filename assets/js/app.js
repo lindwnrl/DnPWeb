@@ -78,8 +78,8 @@ function initValidasiForm() {
         const tahun = form.querySelector("[name='tahun']");
         if (tahun) {
             const nilai = parseInt(tahun.value, 10);
-            if (isNaN(nilai) || nilai < 1900 || nilai > 2026) {
-                tampilkanError(tahun, "Tahun harus di antara 1900-2026.");
+            if (isNaN(nilai) || nilai < 1800 || nilai > 2026) {
+                tampilkanError(tahun, "Tahun harus di antara 1800-2026.");
                 valid = false;
             } else {
                 hapusError(tahun);
